@@ -5,7 +5,7 @@ add_executable(netbench main.cpp)
 # 即使这些库现在还是空的，CMake 也能正常处理。
 # 等后续你在各个子目录写好代码并定义了库，这里就能自动链接上。
 target_link_libraries(netbench PRIVATE
-    # common_lib
+    common_lib
     # net_lib
     # backend_lib
     # server_lib
