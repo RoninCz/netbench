@@ -6,10 +6,10 @@ add_executable(netbench main.cpp)
 # 等后续你在各个子目录写好代码并定义了库，这里就能自动链接上。
 target_link_libraries(netbench PRIVATE
     common_lib
-    # net_lib
+    net_lib
     # backend_lib
-    # server_lib
-    # client_lib
+    server_lib
+    client_lib
 )
 
 # 如果后续引入了 OpenSSL 等第三方库，也在这里链接
